@@ -15,3 +15,7 @@ startwith=a.startsWith("admin");
 endwith=a.endsWith("com");
 console.log(startwith);
 console.log(endwith);
+
+let b="admingmail.com";
+let part=b.slice(2,7);
+console.log(part);
