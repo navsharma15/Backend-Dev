@@ -19,3 +19,9 @@ console.log(endwith);
 let b="admingmail.com";
 let part=b.slice(2,7);
 console.log(part);
+
+let c="aabc";
+let rep=c.replace("a","x");
+console.log(rep);
+let rep1=c.replaceAll("a","x");
+console.log(rep1);
