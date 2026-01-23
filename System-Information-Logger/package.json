@@ -1,7 +1,7 @@
 {
-  "name": "stringproject",
+  "name": "system-information-logger",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "dev": "node app.js"
   },
