@@ -1,10 +1,10 @@
 {
-  "name": "system-information-logger",
+  "name": "todo",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type" : "module",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node todo.js"
   },
   "keywords": [],
   "author": "",
