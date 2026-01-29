@@ -1,0 +1,18 @@
+[
+  {
+    "memberName": "Tarun",
+    "membershipType": "gold",
+    "totalBooks": 2,
+    "totalValue": 1100,
+    "lateFine": 200,
+    "discountedFine": 170
+  },
+  {
+    "memberName": "Amit",
+    "membershipType": "normal",
+    "totalBooks": 1,
+    "totalValue": 700,
+    "lateFine": 200,
+    "discountedFine": 190
+  }
+]
