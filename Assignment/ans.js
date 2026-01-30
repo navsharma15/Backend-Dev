@@ -16,3 +16,8 @@ fs.appendFileSync("./answer.txt",
                 File streams are especially suitable for applications that require efficiency, 
                 scalability, or real-time data handling.",
                 'utf-8');
+
+fs.appendFileSync("./answer.txt", "Answer3: The utf8 encoding parameter specifies how file data should be interpreted as text.
+                   When utf8 is provided, the file content is read and written as human-readable strings instead of raw binary data (buffers). 
+                   This ensures correct handling of characters, symbols, and international text, making file data easier to process and display.",
+                  utf-8);                
