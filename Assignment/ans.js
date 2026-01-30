@@ -10,7 +10,9 @@ fs.writeFileSync("./answers.txt",
                 'utf-8');
 
 fs.appendFileSync("./answer.txt", 
-                "Answer2: File streams should be used when handling large files or continuous data because they process data in small chunks rather than loading the entire file into memory. This approach reduces memory usage, improves performance, and allows data to be processed progressively. 
+                "Answer2: File streams should be used when handling large files or continuous data because they process 
+                data in small chunks rather than loading the entire file into memory. 
+                This approach reduces memory usage, improves performance, and allows data to be processed progressively. 
                 File streams are especially suitable for applications that require efficiency, 
                 scalability, or real-time data handling.",
                 'utf-8');
