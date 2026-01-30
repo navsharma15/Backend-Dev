@@ -39,3 +39,7 @@ fs.appendFileSync("./answer.txt", "Answer 5: To safely delete a directory with a
 
 fs.appendFileSync("./answer.txt", "Answer 6: Piping in streams connects the output of one stream directly to the input of another, 
                   allowing data to flow automatically without manual handling. It is used to efficiently process large data by transferring it chunk by chunk between streams.", utf-8);
+
+fs.appendFileSync("./answer.txt", "Answer 7: It is important to handle errors in file operations to prevent application crashes and unexpected behavior.
+                  Proper error handling helps identify issues such as missing files, permission denials, or insufficient disk space, allowing the application
+                 to respond gracefully. It also ensures data integrity and improves reliability and user experience.", utf-8);                  
