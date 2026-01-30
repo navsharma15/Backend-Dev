@@ -29,3 +29,10 @@ fs.appendFileSync("./answer.txt" ,
                  and ENOTDIR means a file is used where a directory is expected. Other frequent errors include EMFILE (too many open files), 
                  ENOSPC (no space left on disk), and EBUSY (resource is busy or locked)." ,
                   utf-8);
+
+fs.appendFileSync("./answer.txt", "Answer 5: To safely delete a directory with all its contents, 
+                  you should first ensure that the directory exists and that you have the required permissions. 
+                  Then, use a recursive delete operation that removes all files and subdirectories before deleting the main folder. 
+                  In Node.js, this is commonly done using fs.rm() or fs.rmdir() with the recursive option, along with proper error handling to avoid accidental data loss.
+                   Always double-check the directory path before performing the operation, especially in production",
+                   utf-8);
