@@ -20,4 +20,12 @@ fs.appendFileSync("./answer.txt",
 fs.appendFileSync("./answer.txt", "Answer3: The utf8 encoding parameter specifies how file data should be interpreted as text.
                    When utf8 is provided, the file content is read and written as human-readable strings instead of raw binary data (buffers). 
                    This ensures correct handling of characters, symbols, and international text, making file data easier to process and display.",
-                  utf-8);                
+                  utf-8);
+                  
+fs.appendFileSync("./answer.txt" , 
+                 "Answer 4 : Common file system error codes indicate why a file operation failed. 
+                 ENOENT means the file or directory does not exist, EACCES indicates permission is denied, 
+                 EPERM means the operation is not allowed, EISDIR occurs when a directory is used where a file is expected, 
+                 and ENOTDIR means a file is used where a directory is expected. Other frequent errors include EMFILE (too many open files), 
+                 ENOSPC (no space left on disk), and EBUSY (resource is busy or locked)." ,
+                  utf-8);
