@@ -36,3 +36,6 @@ fs.appendFileSync("./answer.txt", "Answer 5: To safely delete a directory with a
                   In Node.js, this is commonly done using fs.rm() or fs.rmdir() with the recursive option, along with proper error handling to avoid accidental data loss.
                    Always double-check the directory path before performing the operation, especially in production",
                    utf-8);
+
+fs.appendFileSync("./answer.txt", "Answer 6: Piping in streams connects the output of one stream directly to the input of another, 
+                  allowing data to flow automatically without manual handling. It is used to efficiently process large data by transferring it chunk by chunk between streams.", utf-8);
