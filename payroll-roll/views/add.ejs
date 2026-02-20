@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="form-page">
+
+        <div class="form-card">
+
+            <h2>Employee Payroll Form</h2>
+
+            <form action="/add" method="POST">
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <!-- Profile Images -->
+                <div class="form-group">
+                    <label>Profile image</label>
+                    <div class="image-options">
+
+                        <label>
+                            <input type="radio" name="profile" value="1">
+                            <img src="/images/maleicon.png" alt="">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="profile" value="2">
+                            <img src="/images/femaleicon.png" alt="">
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                    </div>
+                </div>
+
+                <!-- Department -->
+                <div class="form-group">
+                    <label>Department</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="department" value="HR"> HR</label>
+                        <label><input type="radio" name="department" value="Sales"> Sales</label>
+                        <label><input type="radio" name="department" value="Finance"> Finance</label>
+                        <label><input type="radio" name="department" value="Engineer"> Engineer</label>
+                    </div>
+                </div>
+
+                <!-- Salary Dropdown -->
+                <div class="form-group">
+                    <label>Salary</label>
+                    <select name="salary" required>
+                        <option value="">Select Salary</option>
+                        <option value="10000">₹ 10,000</option>
+                        <option value="20000">₹ 20,000</option>
+                        <option value="30000">₹ 30,000</option>
+                        <option value="40000">₹ 40,000</option>
+                        <option value="50000">₹ 50,000</option>
+                    </select>
+                </div>
+
+                <!-- Start Date -->
+                <div class="form-group">
+                    <label>Start Date</label>
+                    <div class="date-group">
+
+                        <select name="day">
+                            <% for(let i=1;i<=31;i++){ %>
+                                <option value="<%= i %>">
+                                    <%= i %>
+                                </option>
+                                <% } %>
+                        </select>
+
+                        <select name="month">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                        </select>
+
+                        <select name="year">
+                            <% for(let i=2015;i<=2026;i++){ %>
+                                <option value="<%= i %>">
+                                    <%= i %>
+                                </option>
+                                <% } %>
+                        </select>
+
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+                    <a href="/"><button type="button" class="cancel-btn">Cancel</button></a>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

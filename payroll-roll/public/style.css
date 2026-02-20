@@ -1,0 +1,316 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f6f8;
+}
+
+
+
+/* =========================
+   DASHBOARD PAGE
+========================= */
+
+.page-wrapper {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.add-user-btn {
+    background-color: #82c91e;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-user-btn:hover {
+    background-color: #74b816;
+}
+
+
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-table th {
+    background-color: #495057;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.employee-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.employee-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+/* =========================
+   NAME CELL
+========================= */
+
+.name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #dee2e6;
+}
+
+
+
+/* =========================
+   DEPARTMENT BADGE
+========================= */
+
+.dept-badge {
+    background-color: #d3f9d8;
+    color: #2b8a3e;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   ACTION ICONS
+========================= */
+
+.action-icons a {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+/* =========================
+   FORM PAGE
+========================= */
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.form-card {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #82c91e;
+}
+
+
+
+/* =========================
+   RADIO & CHECKBOX
+========================= */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background: #adb5bd;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: #82c91e;
+    border: none;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background: #868e96;
+    border: none;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #74b816;
+}
+
+.cancel-btn:hover,
+.reset-btn:hover {
+    opacity: 0.9;
+}
+
+/* Profile Image Selection */
+
+.image-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hide default radio button */
+.image-options input[type="radio"] {
+    display: none;
+}
+
+/* Label container */
+.image-options label {
+    cursor: pointer;
+}
+
+/* Image styling */
+.image-options img {
+    width: 60px;
+    /* 🔥 size */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f1f3f5;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+/* Selected image */
+.image-options input[type="radio"]:checked+img {
+    border: 3px solid #82c91e;
+    background-color: #d3f9d8;
+    transform: scale(1.05);
+}
+
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

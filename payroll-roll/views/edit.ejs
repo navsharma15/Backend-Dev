@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="form-page">
+
+    <div class="form-card">
+
+        <h2>Edit Employee</h2>
+
+        <form action="/edit/<%= employee.id %>" method="POST">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" value="<%= employee.name %>" required>
+            </div>
+
+
+            <div class="form-group">
+                <label>Department</label>
+                <input type="text" name="department" value="<%= employee.department %>" required>
+            </div>
+
+
+            <div class="form-group">
+                <label>Salary</label>
+                <input type="number" name="salary" value="<%= employee.salary %>" required>
+            </div>
+
+
+            <div class="form-buttons">
+                <a href="/"><button type="button" class="cancel-btn">Cancel</button></a>
+                <button type="submit" class="submit-btn">Update</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
